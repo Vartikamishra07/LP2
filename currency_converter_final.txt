@@ -1,0 +1,30 @@
+public class cc_converter2 
+{   
+    // Method to convert from one currency to another
+    public static void convert(String fromCurrency, String toCurrency, Decimal amount) {
+        Decimal convertedAmount = 0;
+        if (fromCurrency == 'USD' && toCurrency == 'EUR') {
+            convertedAmount = amount * 0.82;
+        } else if (fromCurrency == 'USD' && toCurrency == 'GBP') {
+            convertedAmount = amount * 0.72;
+        } else if (fromCurrency == 'USD' && toCurrency == 'JPY') {
+            convertedAmount = amount * 108.76;
+        } else if (fromCurrency == 'USD' && toCurrency == 'INR') {
+            convertedAmount = amount * 74.39;
+        } else if (fromCurrency == 'EUR' && toCurrency == 'USD') {
+            convertedAmount = amount / 0.82;
+        } else if (fromCurrency == 'GBP' && toCurrency == 'USD') {
+            convertedAmount = amount / 0.72;
+        } else if (fromCurrency == 'JPY' && toCurrency == 'USD') {
+            convertedAmount = amount / 108.76;
+        } else if (fromCurrency == 'INR' && toCurrency == 'USD') {
+            convertedAmount = amount / 74.39;
+        } else {
+            System.debug('Currency not supported');
+        }
+        System.debug('Converted currency is : ' + convertedAmount);
+ }
+}
+
+anony:
+cc_converter2.convert('USD' ,'EUR' , 34);

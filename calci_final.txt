@@ -1,0 +1,39 @@
+public class calc2 
+{
+     public static void add(decimal num1 , decimal num2)
+     {
+         system.debug('add is:' + (num1+num2));
+     }
+     public static void subtract(Decimal num1 , Decimal num2)
+     {
+         System.debug('subtract is:' + (num1-num2));
+     }
+     public static void multiply(Decimal num1 , Decimal num2)
+     {
+         System.debug('multiply is:' + (num1*num2));
+     }
+     public static void divide(Decimal num1 , Decimal num2)
+     {
+         System.debug('division is:' + (num1/num2));
+     }
+     public static void pow(decimal num1 , decimal num2)
+     {
+         System.debug('Power is:' + math.pow(num1.doublevalue(),num2.doublevalue()));
+     }
+     public static void modulus(decimal num1 , decimal num2)
+     {
+         System.debug('Modulus is:' + math.mod(num1.intvalue(),num2.intvalue()));
+     }
+     public static void square(decimal num)
+     {
+         System.debug('square is:' + (num*num));
+     }
+     public static void square_root(decimal num)
+     {
+         System.debug('square root is:' + math.sqrt(num));
+     }
+}
+
+
+anonymous class:
+calc2.add(3,4);

@@ -1,0 +1,30 @@
+public class stud_marksheet 
+{   
+    public static void generateMarksheet(String name , Decimal subject1, Decimal subject2, Decimal subject3, Decimal subject4) {
+        Decimal totalMarks = subject1 + subject2 + subject3 + subject4;
+        Decimal percentage = (totalMarks / 200) * 100;
+        
+        System.debug('Student Name: '+ name);
+        System.debug('-----------------------------');
+        System.debug('Subject-wise Marks:');
+        System.debug('Subject 1: ' + subject1);
+        System.debug('Subject 2: ' + subject2);
+        System.debug('Subject 3: ' + subject3);
+        System.debug('Subject 4: ' + subject4);
+        System.debug('-----------------------------');
+        System.debug('Total Marks: ' + totalMarks);
+        System.debug('-----------------------------');
+        System.debug('Percentage: ' + percentage + '%');
+        System.debug('-----------------------------');
+        
+        if (totalMarks >= 175) {
+            System.debug('Result: Distinction');
+        } else if (totalMarks >= 150 && totalMarks <= 174) {
+            System.debug('Result: First Division');
+        } else if (totalMarks >= 100 && totalMarks <= 149) {
+            System.debug('Result: Pass');
+        } else {
+            System.debug('Result: Fail');
+        }
+    }
+}

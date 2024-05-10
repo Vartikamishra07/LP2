@@ -1,0 +1,23 @@
+public class electricity_bill {
+    public static void calc(Decimal units){
+        System.debug('no of units:'+units);
+        if(units<=100){
+            System.debug('bill:'+(units*10));
+        }
+        else{
+            if(units>100 && units<=200){
+                System.debug('bill:'+((100*10)+(units-100)*15));
+            }
+            else{
+                if(units>200 && units<=300){
+                    System.debug('bill:'+(1000+1500+(units-200)*20));
+                }
+                else{
+                    System.debug('bill:'+(1000+1500+2000+(units-300)*25));
+                }
+            }
+        }
+        
+  
+    }
+}
