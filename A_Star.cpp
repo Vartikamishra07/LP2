@@ -127,3 +127,6 @@ int main() {
 
     return 0;
 }
+
+start: 1 2 3 -1 5 7 8 6
+goal : 1 2 3 4 5 6 7 8 -1
